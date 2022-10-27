@@ -12,5 +12,7 @@ I used to work with data analysis until the necessity of make the information be
   <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB">
 </picture>
 
-### Find me 🌎
- [![LinkedIn](https://img.shields.io/badge/thiagohflima-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiagohflima) [![Twitter](https://img.shields.io/badge/@thiagohfl-%231DA1F2.svg?style=flat&logo=Twitter&logoColor=white)](https://twitter.com/thiagohfl) [![Telegram](https://img.shields.io/badge/@thiagohfl-2CA5E0?style=flat&logo=telegram&logoColor=white)](#)
+### Find me 🌎 
+[<img alt="Gmail" src="https://img.shields.io/badge/thiagohflima-D14836?style=flat&logo=gmail&logoColor=white">](mailto:thiagohflima+fromgithubprofile@gmail.com)
+[<img alt="LinkedIn" src="https://img.shields.io/badge/thiagohflima-%230077B5.svg?style=flat&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/thiagohflima)
+[<img alt="Twitter" src="https://img.shields.io/badge/@thiagohfl-%231DA1F2.svg?style=flat&logo=Twitter&logoColor=white">](https://twitter.com/thiagohfl)
