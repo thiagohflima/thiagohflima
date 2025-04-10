@@ -1,2 +1,4 @@
-### Hey, I'm Thiago! 😜  
-|I used to work with data analysis until I realized the need to make information beautifully readable. Since then, I've been living and breathing web development and creating interfaces.
+# Hey, I'm Thiago! 😜
+
+I started in data analysis, but soon realized the true challenge was making information beautifully readable.  
+Since then, I've been living and breathing **web development**, creating **clean** and **engaging interfaces**.
