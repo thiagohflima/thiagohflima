@@ -1,0 +1,40 @@
+name: Update coding age
+
+on:
+  schedule:
+    - cron: '23 3 1 * *'   # dia 1 de cada mes, 03h23 UTC (= 00h23 BRT)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compute and update coding age
+        run: |
+          start_y=2009; start_m=1
+          ny=$(date +%Y); nm=$(date +%-m)
+          total=$(( (ny - start_y) * 12 + (nm - start_m) ))
+          years=$(( total / 12 )); months=$(( total % 12 ))
+          yw="years"; mw="months"
+          [ "$years" -eq 1 ] && yw="year"
+          [ "$months" -eq 1 ] && mw="month"
+          age="$years $yw, $months $mw"
+          echo "Computed: $age"
+          sed -i -E "s|<!--age-->.*<!--/age-->|<!--age-->${age}<!--/age-->|" README.md
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "No change."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: update coding age"
+            git push
+          fi
