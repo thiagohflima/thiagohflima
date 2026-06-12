@@ -2,7 +2,8 @@ name: Update coding age
 
 on:
   schedule:
-    - cron: '23 4 * * *'   # diario, 04h23 UTC (= 01h23 BRT)
+    - cron: '0 0 * * *'   # diario, meia-noite de Recife
+      timezone: 'America/Recife'
   workflow_dispatch:
 
 permissions:
